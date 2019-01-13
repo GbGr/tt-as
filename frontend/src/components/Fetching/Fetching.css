@@ -1,0 +1,21 @@
+.fetching {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fetching__title {
+    color: #fff;
+    font-family: Shnobel, sans-serif;
+    font-size: 50px;
+    animation: up-down 1000ms infinite alternate ease-in-out;
+}
+
+@keyframes up-down {
+    0% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(10px);
+    }
+}

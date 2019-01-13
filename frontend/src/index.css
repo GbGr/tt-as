@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&subset=cyrillic-ext');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+html, body {
+  height: 100%;
+  background-color: #CD718E;
+}
+
+#root {
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
+}
+
+@font-face {
+  font-family: 'Shnobel';
+  src: local('Shnobel-Oblique'), local('Shnobel Oblique'),
+  url('assets/fonts/Shnobeloblique.woff') format('woff'),
+  url('assets/fonts/Shnobeloblique.woff2') format('woff2'),
+  url('assets/fonts/Shnobeloblique.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Shnobel';
+  src: local('Shnobel-Regular'), local('Shnobel Regular'),
+  url('assets/fonts/Shnobelregular.woff2') format('woff2'),
+  url('assets/fonts/Shnobelregular.woff') format('woff'),
+  url('assets/fonts/Shnobelregular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}

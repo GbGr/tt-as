@@ -1,0 +1,29 @@
+.final {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-start;
+    flex-grow: 1;
+    position: relative;
+    z-index: 1;
+}
+
+.final__text {
+    color: #fff;
+    width: 270px;
+    margin-top: 13vh;
+    text-align: center;
+    font-family: Shnobel, sans-serif;
+}
+
+.final__segment {
+    font-size: 50px;
+}
+
+.final__segment_strikethrough {
+    color: #7F4156;
+    text-decoration: line-through;
+}
+.final__segment_big {
+    font-size: 100px;
+}

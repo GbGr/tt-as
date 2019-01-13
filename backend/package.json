@@ -1,0 +1,37 @@
+{
+  "name": "backend",
+  "version": "0.0.0",
+  "description": "backend",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "ts-node-dev src/server.ts",
+    "db:sync": "ts-node src/shared/sequelize/_sync-dev.ts",
+    "db:seed": "ts-node src/shared/sequelize/_seed-dev.ts"
+  },
+  "author": "Pavel Leonov",
+  "license": "ISC",
+  "dependencies": {
+    "@types/koa": "^2.0.46",
+    "@types/koa-bodyparser": "^4.2.1",
+    "@types/koa-router": "^7.0.31",
+    "@types/node": "^10.9.4",
+    "date-fns": "^1.29.0",
+    "koa": "^2.5.2",
+    "koa-bodyparser": "^4.2.1",
+    "koa-router": "^7.4.0",
+    "pg": "^7.4.3",
+    "pg-hstore": "^2.3.2",
+    "reflect-metadata": "^0.1.12",
+    "sequelize": "^4.38.0",
+    "sequelize-typescript": "^0.6.6",
+    "typescript": "^3.0.3"
+  },
+  "devDependencies": {
+    "koa-static": "^5.0.0",
+    "pm2": "^3.1.2",
+    "ts-node": "^7.0.1",
+    "ts-node-dev": "^1.0.0-pre.29"
+  }
+}

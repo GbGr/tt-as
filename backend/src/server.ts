@@ -10,28 +10,6 @@ const server = new Application();
 server.use(errorHandler);
 
 const baseRouter = new Router();
-// baseRouter.get('/', ctx => {
-//   ctx.set('Content-Type', 'text/html');
-//   ctx.body = createReadStream('../frontend/index.html');
-// });
-// baseRouter.get('/leaderboard', ctx => {
-//   ctx.set('Content-Type', 'text/html');
-//   ctx.body = createReadStream('../frontend/leaderboard.html');
-// });
-// baseRouter.get('/team', ctx => {
-//   ctx.set('Content-Type', 'text/html');
-//   ctx.body = createReadStream('../frontend/team.html');
-// });
-// baseRouter.get('/game', ctx => {
-//   ctx.set('Content-Type', 'text/html');
-//   ctx.body = createReadStream('../frontend/game.html');
-// });
-// baseRouter.get('/profile/:nickname', ctx => {
-//   ctx.set('Content-Type', 'text/html');
-//   ctx.body = createReadStream('../frontend/profile.html');
-// });
-//
-// server.use(require('koa-static')('../frontend'));
 
 server.use(baseRouter.routes());
 server.use(apiRouter.routes());
